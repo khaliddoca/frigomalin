@@ -4,6 +4,10 @@
       "type": "http",
       "url": "https://api.githubcopilot.com/mcp"
     },
+    "github-labels": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/x/labels"
+    },
     "my-mcp-server-04ffeecb": {
       "url": "https://api.githubcopilot.com/mcp",
       "type": "http"
