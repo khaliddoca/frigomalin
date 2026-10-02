@@ -1,0 +1,166 @@
+:root {
+	font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+	color: #25352e;
+	background: #f7f7f2;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	font-weight: 400;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	min-width: 320px;
+	min-height: 100vh;
+	margin: 0;
+}
+
+button,
+a {
+	font: inherit;
+}
+
+.app-shell {
+	width: min(100% - 40px, 920px);
+	margin: 0 auto;
+}
+
+.topbar {
+	min-height: 76px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #d9ded5;
+}
+
+.brand {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	color: #315c4b;
+	font-size: 18px;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.local-badge {
+	padding: 7px 10px;
+	border: 1px solid #b8c8bb;
+	border-radius: 4px;
+	color: #315c4b;
+	font-size: 13px;
+}
+
+.inventory {
+	padding: 38px 0 30px;
+}
+
+.section-heading {
+	display: flex;
+	align-items: end;
+	justify-content: space-between;
+	gap: 16px;
+	margin-bottom: 22px;
+}
+
+.eyebrow {
+	margin: 0 0 5px;
+	color: #69756e;
+	font-size: 13px;
+}
+
+h1,
+h2,
+p {
+	margin-top: 0;
+}
+
+h1 {
+	margin-bottom: 0;
+	font-size: 30px;
+}
+
+.item-count {
+	padding-bottom: 4px;
+	color: #69756e;
+	font-size: 14px;
+}
+
+.empty-state,
+.notice {
+	padding: 20px 0;
+	border-top: 1px solid #d9ded5;
+	border-bottom: 1px solid #d9ded5;
+	color: #526158;
+}
+
+.notice-error {
+	color: #9a3c2e;
+}
+
+.product-list,
+.expiry-section ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.product-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 18px;
+	padding: 15px 0;
+	border-top: 1px solid #d9ded5;
+}
+
+.product-row:last-child {
+	border-bottom: 1px solid #d9ded5;
+}
+
+.product-row h2 {
+	margin-bottom: 4px;
+	font-size: 16px;
+}
+
+.product-row p,
+.product-row time {
+	margin: 0;
+	color: #69756e;
+	font-size: 14px;
+}
+
+.expiry-section {
+	padding: 20px;
+	border-left: 4px solid #d88942;
+	background: #fff5e9;
+}
+
+.expiry-section h2 {
+	margin-bottom: 10px;
+	font-size: 17px;
+}
+
+.expiry-section li + li {
+	margin-top: 6px;
+}
+
+@media (max-width: 520px) {
+	.app-shell {
+		width: min(100% - 28px, 920px);
+	}
+
+	.section-heading {
+		align-items: start;
+		flex-direction: column;
+		gap: 8px;
+	}
+
+	.product-row {
+		align-items: start;
+		flex-direction: column;
+		gap: 8px;
+	}
+}

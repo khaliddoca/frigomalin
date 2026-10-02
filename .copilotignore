@@ -1,0 +1,16 @@
+# Secrets et configurations locales
+.env
+.env.*
+
+# Données réelles et exports utilisateur
+data/exports/
+**/data/exports/
+*.csv
+**/exports/**/*.json
+**/user-data/**/*.json
+**/user-exports/**/*.json
+
+# Fichiers générés volumineux
+node_modules/
+dist/
+coverage/
